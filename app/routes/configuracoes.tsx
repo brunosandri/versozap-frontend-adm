@@ -165,7 +165,7 @@ export default function Configuracoes() {
                     <input
                       type="url"
                       name="sender_url"
-                      defaultValue="http://localhost:3000"
+                      defaultValue="https://versozap-sender-v2-production.up.railway.app"
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
                     />
                   </div>

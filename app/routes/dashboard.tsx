@@ -4,7 +4,7 @@ import type { Route } from "./+types/dashboard";
 export async function loader({}: Route.LoaderArgs) {
   // Em produção, estes dados virão da API do backend
   try {
-    const response = await fetch("http://localhost:5000/usuarios");
+    const response = await fetch("https://versozap-backend.onrender.com/usuarios");
     let usuarios = [];
     
     if (response.ok) {

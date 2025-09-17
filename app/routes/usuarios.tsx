@@ -4,7 +4,7 @@ import type { Route } from "./+types/usuarios";
 
 export async function loader({}: Route.LoaderArgs) {
   try {
-    const response = await fetch("http://localhost:5000/usuarios");
+    const response = await fetch("https://versozap-backend.onrender.com/usuarios");
     if (response.ok) {
       const usuarios = await response.json();
       return { usuarios };
